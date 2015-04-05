@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
@@ -94,14 +93,15 @@
 					</div>
 				</form>
 				<ul class="nav navbar-nav">
-					<li><a href="#"><img class="img-rounded" src="img\MT2014020.jpg"
-							alt="no" style="width: 22px; height: 22px;" /><b>&nbsp;Azad
-								Krishna</b></a></li>
+					<li><a href="#"><img class="img-rounded"
+							src="img\MT2014020.jpg" alt="no"
+							style="width: 22px; height: 22px;" /><b>&nbsp;Azad Krishna</b></a></li>
 					<li><a href="home_fillSearchList"><b>Home</b></a></li>
 					<li class="dropdown"><a href="#" style="padding-right: 0px;"
 						class="dropdown-toggle" data-toggle="dropdown"> <img
-							src="/Facebook_Ours/asset/images/fr_icon.png" id="friendrequest_icon"
-							height="25px" width="30px" style="padding-right: 0px;" /> <sup><span
+							src="/Facebook_Ours/asset/images/fr_icon.png"
+							id="friendrequest_icon" height="25px" width="30px"
+							style="padding-right: 0px;" /> <sup><span
 								class="badge alert-danger" id="friendrequest_count"></span></sup>
 
 					</a>
@@ -197,9 +197,8 @@
 			<div class="col-sm-8 " style="width: 507px;">
 
 				<ul class="timeline" style="width: 510px">
-					<li><div class = "panel">
-						<br>
-							<img alt="error" style="margin-left: 2%;"
+					<li><div class="panel">
+							<br> <img alt="error" style="margin-left: 2%;"
 								src="/Facebook_Ours	/asset/images/update_status.png"
 								align="left" width="16px" height="16px">
 							<p style="font-weight: bold; font-size: 13px;">&nbsp;Update
@@ -210,11 +209,13 @@
 							</center>
 							<input type="hidden" id="post_to_id"
 								value='<s:property value="#session.user.getProfile_id()"/>' />
-							<input type="text" id="newWallPostText" size="84"
+							<a class="accordion-toggle collapsed" data-parent="#accordion"
+								href="#collapseOne" data-toggle="collapse"><input
+								type="text" id="newWallPostText" size="84"
 								placeholder="Whats on your mind?" required="true"
-								style="border: 0px; height: 40px; margin-left: 2%; outline: none; overflow: visible;" /><br>
-							<div class=" panel-collapse collapse" id="collapseOne">
-									<div class="pull-right">
+								style="border: 0px; height: 40px; margin-left: 2%; outline: none; overflow: visible;" /></a><br>
+							<div class=" panel-collapse collapse panel-footer" id="collapseOne">
+								<div class="pull-right">
 										<input type="submit" name="submit" value="Post" id="btn-share"
 											class="btn btn-primary">
 									</div>
@@ -224,12 +225,14 @@
 										<li><a href=""><i
 												class="glyphicon glyphicon-map-marker"></i></a></li>
 									</ul>
-								</div>
+								
+							
+							</div>
 						</div></li>
 					<li style="width: 507px;">
 						<div class="timeline-badge primary">
 							<a><i class="glyphicon glyphicon-time invert" title="Now"
-								id="" style="width:534px;"></i></a>
+								id="" style="width: 534px;"></i></a>
 						</div>
 						<div class="timeline-panel panel-group well" id="accordion">
 							<form action="update.php" method="GET" role="form"
