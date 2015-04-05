@@ -197,96 +197,47 @@
 			<div class="col-sm-8 " style="width: 507px;">
 
 				<ul class="timeline" style="width: 510px">
-					<li><div class="panel">
-							<br> <img alt="error" style="margin-left: 2%;"
-								src="/Facebook_Ours	/asset/images/update_status.png"
-								align="left" width="16px" height="16px">
-							<p style="font-weight: bold; font-size: 13px;">&nbsp;Update
-								Status</p>
-							<center>
-								<div
-									style="height: 1px; width: 96%; background-color: #e3e3e3; margin-bottom: 5px; margin-top: 5px;"></div>
-							</center>
-							<input type="hidden" id="post_to_id"
-								value='<s:property value="#session.user.getProfile_id()"/>' />
-							<a class="accordion-toggle collapsed" data-parent="#accordion"
-								href="#collapseOne" data-toggle="collapse"><input
-								type="text" id="newWallPostText" size="84"
-								placeholder="Whats on your mind?" required="true"
-								style="border: 0px; height: 40px; margin-left: 2%; outline: none; overflow: visible;" /></a><br>
-							<div class=" panel-collapse collapse panel-footer" id="collapseOne">
-								<div class="pull-right">
-										<input type="submit" name="submit" value="Post" id="btn-share"
-											class="btn btn-primary">
-									</div>
-									<ul class="list-inline">
-										<li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
-										<li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
-										<li><a href=""><i
-												class="glyphicon glyphicon-map-marker"></i></a></li>
-									</ul>
-								
-							
-							</div>
-						</div></li>
-					<li style="width: 507px;">
-						<div class="timeline-badge primary">
-							<a><i class="glyphicon glyphicon-time invert" title="Now"
-								id="" style="width: 534px;"></i></a>
-						</div>
-						<div class="timeline-panel panel-group well" id="accordion">
+					<li><div class="panel" style="width: 472px;">
 							<form action="update.php" method="GET" role="form"
 								enctype="multipart/form-data" class="facebook-share-box">
-								<div class="timeline-body">
-									<div class="share-form">
-										<ul class="post-types">
-											<li class="post-type"><a class="status" id="shareType"
-												href="#"><i class="icon icon-file"></i> Status</a></li>
-											<li class="post-type"><a class="photos" id="shareType"
-												href="#"><i class="icon icon-camera"></i> Photos</a></li>
-											<li class="post-type"><a class="videos" id="shareType"
-												href="#videoUrl"><i class="icon icon-film"></i> Video</a></li>
-										</ul>
+								<br> <img alt="error" style="margin-left: 2%;"
+									src="/Facebook_Ours	/asset/images/update_status.png"
+									align="left" width="16px" height="16px">
+								<p style="font-weight: bold; font-size: 13px;">&nbsp;Update
+									Status</p>
+								<center>
+									<div
+										style="height: 1px; width: 96%; background-color: #e3e3e3; margin-bottom: 5px; margin-top: 5px;"></div>
+								</center>
+								<input type="hidden" id="post_to_id"
+									value='<s:property value="#session.user.getProfile_id()"/>' />
 
-										<div class="share">
-											<div class="arrow"></div>
-											<div>
-												<a class="accordion-toggle collapsed"
-													data-parent="#accordion" href="#collapseOne"
-													data-toggle="collapse"><textarea name="message"
-														cols="40" rows="10" id="status_message"
-														class="form-control message"
-														style="height: 100px; overflow: hidden;"
-														placeholder="What's on your mind ?"></textarea></a>
-											</div>
-											<div class="image hide">
-												<input type="file" class="form-control" name="image"
-													id="image">
-											</div>
-											<div class="video hide">
-												<input type="text" class="form-control"
-													placeholder="Youtube or Vimeo video URL" id="videoUrl"
-													name="videoUrl">
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class=" panel-collapse collapse" id="collapseOne">
+								<a class="accordion-toggle collapsed" data-parent="#accordion"
+									href="#collapseOne" data-toggle="collapse"><textarea
+									type="text" id="newWallPostText" name = "newPost"size="84"
+									placeholder="Whats on your mind?" required="true"
+									style="border: 0px; height: 40px; width: 469px; margin-left: 0px; outline: none; overflow: auto;" ></textarea></a><br>
+								<div class=" panel-collapse collapse panel-footer"
+									id="collapseOne" style="height: 53px;">
 									<div class="pull-right">
-										<input type="submit" name="submit" value="Post" id="btn-share"
+										<input
+											style="border-bottom-width: 0px; border-top-width: 0px; padding-top: 0px;"
+											type="submit" name="submit" value="Post" id="btn-share"
 											class="btn btn-primary">
 									</div>
+
 									<ul class="list-inline">
 										<li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
 										<li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
 										<li><a href=""><i
 												class="glyphicon glyphicon-map-marker"></i></a></li>
 									</ul>
+
+
 								</div>
 							</form>
-						</div>
-					</li>
+						</div></li>
+					
 					<s:iterator value="wall_post">
 						<li>
 							<div class="timeline-panel">
